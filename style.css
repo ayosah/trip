@@ -1,0 +1,138 @@
+body {
+    background-color: #ffd1dc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 5050px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .top-kitten {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .top-kitten img {
+    width: 100px;
+  }
+  
+  .no-button {
+    background: #fff;
+    border: none;
+    color: #f88;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .kitten-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .kitten-button img {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+  
+  .kitten-button button {
+    background: #fff;
+    border: none;
+    color: #f88;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .kitten-button button:hover,
+  .no-button:hover {
+    background: #f88;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column; /* stack them vertically */
+    align-items: center; /* center horizontally */
+    margin-top: 40px; /* adjust the vertical position */
+  }
+  
+  .no-button {
+    margin-top: 10px; /* space between image and button */
+  }
+  
+  .header-img {
+    width: 130px; /* keep same size as other images */
+  }
+  
+  body {
+    background-color: #ffd1dc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  
+  .quote-box, .back-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .quote-box p {
+    font-size: 1.2em;
+    color: #f88;
+  }
+  
+  .quote-box button, .back-box button {
+    background: #f88;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .quote-box button:hover, .back-box button:hover {
+    background: #fff;
+    color: #f88;
+    border: 1px solid #f88;
+  }
+  

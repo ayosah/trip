@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quotes</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quote-box">
+      <p id="quote"></p>
+      <button id="new-quote"></button>
+    </div>
+
+    <div class="back-box">
+      <a href="index.html">
+        <button>BACK</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const jokes = [
+    "Paano gumawa si Maris ng Tinapa? Pagkahanda ng isda, Smoke then pack na",
+"May joke ako tungkol sa airport. kaso NAIA ako eh hehe.",
+"Help! 25 lang ang alam kong alphabet. I don’t know y.",
+"Ano ang binabayaran natin sa tapsilog? Yung tapa at sinangag lang. Kasi pritong itlog e.",
+"Bakit maraming car guy na INC? Kasi mga auto-auto sila.",
+"Ano ang tawag sa anak ng taong grasa? Baby oil!",
+"What’s the best Pinoy joke ever? Philippines Election.",
+"Anong soup ang iniinom? Edi soupdrinks.",
+"Anong tawag sa super ikling escalator? Esca-little."
+    ];
+  
+    const quoteEl = document.getElementById('quote');
+    const newQuoteBtn = document.getElementById('new-quote');
+  
+    function showRandomJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      quoteEl.textContent = jokes[randomIndex];
+    }
+  
+    newQuoteBtn.addEventListener('click', showRandomJoke);
+  
+    // Initial load
+    showRandomJoke();
+  </script>
+  
