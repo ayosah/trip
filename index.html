@@ -1,285 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Letter Bouquet - Clear Reader Edition</title>
-<style>
-  /* Base Theme - Maintained dark theme */
-  body {
-    background-color: #16161a;
-    color: #fffffe;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/flowers.png" type="image/x-icon" />
+    <title>Flower Animation</title>
+  </head>
 
-  /* Header - Maintained */
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background-color: #111113;
-    border-bottom: 2px solid #2cb67d;
-  }
+  <body class="container">
+    <div class="night"></div>
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower_leafs flower_leafs--1">
+          <div class="flower_leaf flower_leaf--1"></div>
+          <div class="flower_leaf flower_leaf--2"></div>
+          <div class="flower_leaf flower_leaf--3"></div>
+          <div class="flower_leaf flower_leaf--4"></div>
+          <div class="flower_white-circle"></div>
 
-  .header-title { font-weight: bold; font-size: 1.2rem; }
-  .header-subtitle { color: #94a1b2; font-size: 0.9rem; }
+          <div class="flower_light flower_light--1"></div>
+          <div class="flower_light flower_light--2"></div>
+          <div class="flower_light flower_light--3"></div>
+          <div class="flower_light flower_light--4"></div>
+          <div class="flower_light flower_light--5"></div>
+          <div class="flower_light flower_light--6"></div>
+          <div class="flower_light flower_light--7"></div>
+          <div class="flower_light flower_light--8"></div>
+        </div>
+        <div class="flower_line">
+          <div class="flower_line__leaf flower_line__leaf--1"></div>
+          <div class="flower_line__leaf flower_line__leaf--2"></div>
+          <div class="flower_line__leaf flower_line__leaf--3"></div>
+          <div class="flower_line__leaf flower_line__leaf--4"></div>
+          <div class="flower_line__leaf flower_line__leaf--5"></div>
+          <div class="flower_line__leaf flower_line__leaf--6"></div>
+        </div>
+      </div>
 
-  /* Main Canvas Area - Maintained */
-  .canvas {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-  }
+      <div class="flower flower--2">
+        <div class="flower_leafs flower_leafs--2">
+          <div class="flower_leaf flower_leaf--1"></div>
+          <div class="flower_leaf flower_leaf--2"></div>
+          <div class="flower_leaf flower_leaf--3"></div>
+          <div class="flower_leaf flower_leaf--4"></div>
+          <div class="flower_white-circle"></div>
 
-  /* The Bouquet Container (Handles the Sway) - Maintained */
-  .bouquet {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    animation: sway 4.5s ease-in-out infinite alternate;
-    transform-origin: bottom center;
-    margin-top: 100px; /* Gives room for the reader panel above */
-  }
+          <div class="flower_light flower_light--1"></div>
+          <div class="flower_light flower_light--2"></div>
+          <div class="flower_light flower_light--3"></div>
+          <div class="flower_light flower_light--4"></div>
+          <div class="flower_light flower_light--5"></div>
+          <div class="flower_light flower_light--6"></div>
+          <div class="flower_light flower_light--7"></div>
+          <div class="flower_light flower_light--8"></div>
+        </div>
+        <div class="flower_line">
+          <div class="flower_line__leaf flower_line__leaf--1"></div>
+          <div class="flower_line__leaf flower_line__leaf--2"></div>
+          <div class="flower_line__leaf flower_line__leaf--3"></div>
+          <div class="flower_line__leaf flower_line__leaf--4"></div>
+        </div>
+      </div>
 
-  @keyframes sway {
-    0% { transform: rotate(-3deg); }
-    100% { transform: rotate(3deg); }
-  }
+      <div class="flower flower--3">
+        <div class="flower_leafs flower_leafs--3">
+          <div class="flower_leaf flower_leaf--1"></div>
+          <div class="flower_leaf flower_leaf--2"></div>
+          <div class="flower_leaf flower_leaf--3"></div>
+          <div class="flower_leaf flower_leaf--4"></div>
+          <div class="flower_white-circle"></div>
 
-  /* The Vase - Maintained */
-  .vase {
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-    width: 100px;
-    height: 90px;
-    z-index: 10;
-  }
+          <div class="flower_light flower_light--1"></div>
+          <div class="flower_light flower_light--2"></div>
+          <div class="flower_light flower_light--3"></div>
+          <div class="flower_light flower_light--4"></div>
+          <div class="flower_light flower_light--5"></div>
+          <div class="flower_light flower_light--6"></div>
+          <div class="flower_light flower_light--7"></div>
+          <div class="flower_light flower_light--8"></div>
+        </div>
+        <div class="flower_line">
+          <div class="flower_line__leaf flower_line__leaf--1"></div>
+          <div class="flower_line__leaf flower_line__leaf--2"></div>
+          <div class="flower_line__leaf flower_line__leaf--3"></div>
+          <div class="flower_line__leaf flower_line__leaf--4"></div>
+        </div>
+      </div>
 
-  /* Greenery Layer (Stems & Leaves) - Maintained */
-  .greenery {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-  }
+      <div class="grow-ans" style="--d: 1.2s">
+        <div class="flower_g-long">
+          <div class="flower_g-long__top"></div>
+          <div class="flower_g-long__bottom"></div>
+        </div>
+      </div>
 
-  /* Shared Flower Styles - Maintained */
-  .flower {
-    position: absolute;
-    cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 5;
-    transform-origin: center;
-  }
+      <div class="growing-grass">
+        <div class="flower_grass flower_grass--1">
+          <div class="flower_grass--top"></div>
+          <div class="flower_grass--bottom"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--1"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--2"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--3"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--4"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--5"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--6"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--7"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--8"></div>
+          <div class="flower_grass__overlay"></div>
+        </div>
+      </div>
 
-  .flower:hover {
-    transform: scale(1.1);
-  }
+      <div class="growing-grass">
+        <div class="flower_grass flower_grass--2">
+          <div class="flower_grass--top"></div>
+          <div class="flower_grass--bottom"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--1"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--2"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--3"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--4"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--5"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--6"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--7"></div>
+          <div class="flower_grass__leaf flower_grass__leaf--8"></div>
+          <div class="flower_grass__overlay"></div>
+        </div>
+      </div>
 
-  /* Modified active class for highlight effect only */
-  .flower.active {
-    transform: scale(1.3) translateY(-10px);
-    z-index: 20;
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
-  }
+      <div class="grow-ans" style="--d: 2.4s">
+        <div class="flower_g-right flower_g-right--1">
+          <div class="leaf"></div>
+        </div>
+      </div>
 
-  .flower svg {
-    display: block;
-    overflow: visible;
-  }
+      <div class="grow-ans" style="--d: 2.8s">
+        <div class="flower_g-right flower_g-right--2">
+          <div class="leaf"></div>
+        </div>
+      </div>
 
-  /* Flower Positioning Maps - Maintained */
-  .f-top-purple { top: 20px; left: 120px; }
-  .f-left-blue { top: 60px; left: 50px; }
-  .f-center-purple { top: 100px; left: 100px; z-index: 8; }
-  .f-right-pink { top: 70px; left: 180px; z-index: 7; }
-  .f-left-cluster { top: 150px; left: 40px; z-index: 9; }
-  .f-right-yellow { top: 140px; left: 200px; }
-  .f-bottom-star { top: 210px; left: 80px; z-index: 11; }
-  .f-bottom-orange { top: 210px; left: 170px; z-index: 11; }
+      <div class="grow-ans" style="--d: 2.8s">
+        <div class="flower_g-front">
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--1"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--2"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--3"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--4"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--5"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--6"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--7"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div
+            class="flower_g-front__leaf-wrapper flower_g-front__leaf-wrapper--8"
+          >
+            <div class="flower_g-front__leaf"></div>
+          </div>
+          <div class="flower_g-front__line"></div>
+        </div>
+      </div>
 
-  /* New Centralized Reader Panel */
-  #reader-panel {
-    position: absolute;
-    top: 30px; /* Position at the top of the canvas */
-    left: 50%;
-    transform: translateX(-50%) translateY(-20px);
-    width: 90%;
-    max-width: 600px;
-    background-color: #111113;
-    border: 2px solid #2cb67d;
-    border-radius: 10px;
-    padding: 25px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease;
-    z-index: 50; /* Above all flowers */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  }
+      <div class="grow-ans" style="--d: 3.2s">
+        <div class="flower_g-fr">
+          <div class="leaf"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--1"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--2"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--3"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--4"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--5"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--6"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--7"></div>
+          <div class="flower_g-fr__leaf flower_g-fr__leaf--8"></div>
+        </div>
+      </div>
 
-  #reader-panel.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-  }
+      <div class="long-g long-g--0">
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 2.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
 
-  /* Styles for the clear paragraphs in the panel */
-  #reader-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    text-align: justify;
-    margin: 0;
-    color: #fffffe;
-  }
-</style>
-</head>
-<body>
+      <div class="long-g long-g--1">
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.8s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
 
-  <header>
-    <div class="header-title">The Letter Bouquet</div>
-    <div class="header-subtitle">Click a flower to read</div>
-  </header>
+      <div class="long-g long-g--2">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
 
-  <div class="canvas" id="canvas">
+      <div class="long-g long-g--3">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--4">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--5">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--6">
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.4s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.6s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.8s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--7">
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.5s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
     
-    <div id="reader-panel">
-      <p id="reader-text"></p>
-    </div>
-
-    <div class="bouquet" id="bouquet">
-      
-      <svg class="greenery" viewBox="0 0 300 300">
-        <g stroke="#2cb67d" stroke-width="5" fill="none" stroke-linecap="round">
-          <path d="M150,55 Q150,140 150,230"/>
-          <path d="M85,95 Q110,160 150,230"/> 
-          <path d="M150,150 L150,230"/>       
-          <path d="M220,110 Q180,170 150,230"/>
-          <path d="M70,180 Q100,210 150,230"/> 
-          <path d="M235,175 Q190,210 150,230"/>
-        </g>
-        <g fill="#2cb67d" stroke="#16161a" stroke-width="3" stroke-linejoin="round">
-          <path d="M150,170 Q110,140 90,170 Q110,190 150,170 Z"/>
-          <path d="M150,140 Q200,110 220,140 Q200,170 150,140 Z"/>
-          <path d="M150,200 Q120,180 100,210 Q120,230 150,200 Z"/>
-          <path d="M150,190 Q190,180 210,210 Q190,230 150,190 Z"/>
-        </g>
-      </svg>
-
-      <div class="vase">
-        <svg width="100" height="90" viewBox="0 0 100 90">
-          <path d="M10,2 L90,2 L96,88 L4,88 Z" fill="#9be08a" stroke="#16161a" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M30,2 L30,88 M50,2 L50,88 M70,2 L70,88" stroke="#16161a" stroke-width="3" opacity="0.3"/>
-        </svg>
-      </div>
-
-      <div class="flower f-top-purple" data-paragraph="You are, without a doubt, the most beautiful girlfriend in the entire world. Every time I look at you, I’m still blown away by your smile, your eyes, and the graceful way you carry yourself. It’s not just your outside that is stunning, though; it’s the pure, radiant light you have inside your soul that makes you completely breathtaking to me.">
-        <svg width="60" height="70" viewBox="0 0 100 100">
-          <path d="M20,80 C20,20 50,10 50,10 C50,10 80,20 80,80 C50,90 20,80 20,80 Z" fill="#9f7aea" stroke="#16161a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        </svg>
-      </div>
-
-      <div class="flower f-left-blue" data-paragraph="Since you walked into my life, you have shaped me into the best version of myself. You challenge me to reach higher, support me when I stumble, and believe in me even when I doubt myself. I am a kinder, stronger, and more grounded person simply because I have you standing by my side.">
-        <svg width="70" height="70" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#4299e1"/>
-          <path d="M50,15 L50,85 M15,50 L85,50 M25,25 L75,75 M25,75 L75,25" stroke="#16161a" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="50" cy="50" r="45" fill="none" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="15" fill="#ecc94b" stroke="#16161a" stroke-width="4"/>
-        </svg>
-      </div>
-
-      <div class="flower f-center-purple" data-paragraph="I want to take a moment to say I'm truly sorry for the times I've fallen short, made mistakes, or caused you any stress. I know I'm not perfect, and it breaks my heart whenever I'm the reason your smile fades, even for a second. Please know that I am always trying to learn and grow, because you deserve nothing but my absolute best.">
-        <svg width="100" height="100" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#b794f4" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="30" fill="none" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="15" fill="none" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="5" fill="#16161a"/>
-        </svg>
-      </div>
-
-      <div class="flower f-right-pink" data-paragraph="Thank you for everything you do, both the big sacrifices and the countless little things I notice every day. Thank you for your patience, your infectious laughter, and for actively choosing me every single morning. I don’t say it enough, but I am endlessly grateful for you and the beautiful life we are building together.">
-        <svg width="80" height="80" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#fc8181" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="25" fill="none" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="10" fill="none" stroke="#16161a" stroke-width="4"/>
-        </svg>
-      </div>
-
-      <div class="flower f-left-cluster" data-paragraph="What we have is the kind of love people write songs and poetry about. It is deep, passionate, and unwavering—a love that anchors me during the hard times and makes the sunny days shine even brighter. I love you more than words could ever fully express, with every single beat of my heart.">
-        <svg width="60" height="60" viewBox="0 0 100 100">
-          <circle cx="30" cy="30" r="25" fill="#b794f4" stroke="#16161a" stroke-width="4"/>
-          <circle cx="70" cy="30" r="25" fill="#b794f4" stroke="#16161a" stroke-width="4"/>
-          <circle cx="30" cy="70" r="25" fill="#b794f4" stroke="#16161a" stroke-width="4"/>
-          <circle cx="70" cy="70" r="25" fill="#b794f4" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="10" fill="#16161a"/>
-        </svg>
-      </div>
-
-      <div class="flower f-right-yellow" data-paragraph="I am so unbelievably excited for our future together! Every day with you is a new adventure, and I cannot wait to see all the places we'll go, the memories we'll make, and the dreams we will turn into reality. As long as we are together, I know the best is always yet to come.">
-        <svg width="70" height="70" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#ecc94b"/>
-          <path d="M50,15 L50,85 M15,50 L85,50 M25,25 L75,75 M25,75 L75,25" stroke="#16161a" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="50" cy="50" r="45" fill="none" stroke="#16161a" stroke-width="4"/>
-          <circle cx="50" cy="50" r="15" fill="#ed8936" stroke="#16161a" stroke-width="4"/>
-        </svg>
-      </div>
-
-      <div class="flower f-bottom-star" data-paragraph="Even though there's no physical flower, my love for you is always growing, vibrant, and alive. You are my beautiful flower, my absolute world, and the love of my life. Keep blooming, my lovey, because I promise to always be the one watering your roots, protecting you, and admiring your petals for the rest of our days.">
-        <svg width="40" height="40" viewBox="0 0 100 100">
-          <polygon points="50,5 65,40 100,50 65,60 50,95 35,60 0,50 35,40" fill="#ecc94b" stroke="#16161a" stroke-width="5" stroke-linejoin="round"/>
-        </svg>
-      </div>
-
-      <div class="flower f-bottom-orange" data-paragraph="May our the rest of our story be filled with understanding, respect, and love. I will always choose you whenever, whatever, and however. You are my forever, and I am so grateful to have you as my girlfriend. I love you more than words can say, and I can’t wait to spend the rest of my life showing you just how much you make me more me.">
-        <svg width="50" height="50" viewBox="0 0 100 100">
-          <path d="M10,20 L30,50 L50,20 L70,50 L90,20 L80,90 L20,90 Z" fill="#ed8936" stroke="#16161a" stroke-width="5" stroke-linejoin="round"/>
-        </svg>
-      </div>
-
-    </div>
-  </div>
-
-  <script>
-    const flowers = document.querySelectorAll('.flower');
-    const panel = document.getElementById('reader-panel');
-    const readerText = document.getElementById('reader-text');
-    const bouquet = document.getElementById('bouquet');
-
-    flowers.forEach(flower => {
-      flower.addEventListener('click', function(e) {
-        // Prevent click from affecting the background reset
-        e.stopPropagation();
-
-        // Remove active class from all flowers
-        flowers.forEach(f => f.classList.remove('active'));
-
-        // Add active class to clicked flower for CSS highlight animation
-        this.classList.add('active');
-
-        // Retrieve and set the full paragraph text to the READER PANEL
-        const paragraph = this.getAttribute('data-paragraph');
-        readerText.innerText = paragraph;
-
-        // Show the centralized reader panel with a beautiful fade
-        panel.classList.add('show');
-      });
-    });
-
-    // Reset interaction (hide panel, deselect flower) when clicking empty background space
-    document.addEventListener('click', function() {
-      flowers.forEach(f => f.classList.remove('active'));
-      panel.classList.remove('show');
-    });
-  </script>
-</body>
+  </body>
 </html>
+
+ 
